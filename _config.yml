@@ -11,7 +11,7 @@ analytics:
   twitter: l4y05
 opengraph:
   appId: "1517733501804443"
-  image: "http://s3-us-west-2.amazonaws.com/cdn.thegrid.io/fixtures/images/no_more_zuck.png"
+  image: "http://s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/purus-fb.png"
   type: website
 collections:
   - filter:
