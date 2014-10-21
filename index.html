@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/><meta property="og:image" content="http://s3-us-west-2.amazonaws.com/cdn.thegrid.io/fixtures/images/no_more_zuck.png"/><meta property="og:title" content="AI Websites That Design Themselves"/><meta property="og:site_name" content="The Grid"/><meta property="og:type" content="website"/><meta property="og:description" content="This is not another do-it-yourself website builder. The Grid harnesses the power of artificial intelligence to take everything you throw at it - videos, images, text, urls and more - and automatically shape them into a custom website unique to you. As your needs grow, it evolves with you, effortlessly adapting to your needs. Want to add e-commerce? Social feeds? A different layout? The Grid just takes care of it. This is not a website builder. This is your personal AI web developer. Its first masterpiece is the website you&#39;re looking at right now. Its next one could be yours."/><meta property="og:app_id" content="1517733501804443"/><title>The Grid</title><style type="text/css">html:not(.gss-ready) {
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/><meta property="og:image" content="http://s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/purus-fb.png"/><meta property="og:title" content="AI Websites That Design Themselves"/><meta property="og:site_name" content="The Grid"/><meta property="og:type" content="website"/><meta property="og:description" content="This is not another do-it-yourself website builder. The Grid harnesses the power of artificial intelligence to take everything you throw at it - videos, images, text, urls and more - and automatically shape them into a custom website unique to you. As your needs grow, it evolves with you, effortlessly adapting to your needs. Want to add e-commerce? Social feeds? A different layout? The Grid just takes care of it. This is not a website builder. This is your personal AI web developer. Its first masterpiece is the website you&#39;re looking at right now. Its next one could be yours."/><meta property="og:app_id" content="1517733501804443"/><title>The Grid</title><style type="text/css">html:not(.gss-ready) {
   opacity:0;
 }
 
@@ -124,6 +124,18 @@ section .button {
   letter-spacing: .16em;
 }
 
+section button.loading,
+section .button.loading {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/cta/master/images/processing-monochrome.gif);
+}
+
+section button.loading > span,
+section .button.loading > span {
+  visibility: hidden;
+}
+
 section.head-cta {
   background-color: hsl(0,0%,0%);
   overflow: hidden;
@@ -189,24 +201,6 @@ section.head-cta .cta:hover, section.head-cta .play {
   background-color: transparent;
   border: 2px solid hsla(42, 84%, 69%, .59);
   color: hsl(42, 84%, 69%);
-}
-
-section.head-cta .loading-cta-text {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/cta/master/images/processing-monochrome.gif);
-}
-body.payment-open section.head-cta .loading-cta-text {
-  display: inline-block;
-}
-body.payment-open section.head-cta .regular-cta-text {
-  opacity: 0;
 }
 /*section.reposts * {
   -webkit-transition: all .5s;
@@ -478,28 +472,6 @@ section.reposts {
 .banner-cta aside svg.logo {
   fill: hsla(195, 25%, 42%, .1);
 }
-
-.banner-cta .loading-cta-text {
-  display: none;
-  position: absolute;
-  left: calc(50% - 18px);
-  margin-top: -2px;
-}
-body.payment-open .banner-cta .loading-cta-text {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/cta/master/images/processing-monochrome.gif);
-}
-body.payment-open .banner-cta .regular-cta-text {
-  opacity: 0;
-}
-
 
 
 @media (max-width: 599px) {
@@ -1879,10 +1851,10 @@ section.reposts {
     @v |(& .media)| in(&);
   }
 
-  [large-screen-content-width] <=  [md] * 10;
-  [large-screen-content-width] == ::window[width] * .61;
-  [large-screen-content-padding] <= [md] * 3/2;
-  [large-screen-content-padding] == ::window[width] / 10;
+  &[large-screen-content-width] <=  [md] * 10;
+  &[large-screen-content-width] == ::window[width] * .61;
+  &[large-screen-content-padding] <= [md] * 3/2;
+  &[large-screen-content-padding] == ::window[width] / 10;
 }
 
 @if ::window[width] <= 400 {
@@ -2060,11 +2032,11 @@ section.reposts {
       @v |(&"zone1")| in(&);
       @v |(&"zone2")| in(&);
 
+      (& .content)[width] == &[large-screen-content-width];
+      (& .content)[padding] == &[large-screen-content-padding];
       .content {
-        width: == [large-screen-content-width];
         height: == &[intrinsic-height];
         /*height: == [md] * 6;*/
-        padding: == [large-screen-content-padding];
 
         .detail {
           width: == [md] / 2;
@@ -2981,8 +2953,8 @@ portrait mobile
 
       &"media"[width] == &[width] - ([base] * 8);
 
-      & .media {
-        margin-left: == [margin-right] == [base] * 4;
+      .media {
+        margin-left: == &[margin-right] == [base] * 4;
       }
     }
     @else {
@@ -3008,15 +2980,15 @@ portrait mobile
 
       &"media"[width] == &[width] - ([base] * 8);
 
-      & .media {
-        margin-left: == [margin-right] == [base] * 4;
+      .media {
+        margin-left: == &[margin-right] == [base] * 4;
       }
     }
   }
 }
 </style><section class="head-cta top" style="position: relative"><div class="bg media" style="background-size:cover; background-image:url(https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/b1c9b1ca4f93bc0072c358e366290128/passthrough?input=http%3A%2F%2Fimg.youtube.com%2Fvi%2FOXA4-5x31V0%2Fhqdefault.jpg&amp;width=480&amp;height=360);"></div><div class="bg overlay"></div><video autoplay="true" loop="true"><source type="video/mp4" src="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/posts/cta-ui-bg.mp4"><source type="video/webm" src="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/posts/cta-ui-bg.webm"></video><div class="overlay"></div><svg version="1.1" class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46 46" enable-background="new 0 0 46 46" xml:space="preserve">
     <polygon points="46,46 0,46 0,0 46,0 46,2 2,2 2,44 44,44 44,13 13,13 13,33 33,33 33,24 22,24 22,22 35,22 35,35 11,35 11,11 46,11"/>
-</svg><h2 class="title heading">Join the Evolution</h2><h1 class="subtitle">AI Websites That Design Themselves</h1><button class="cta preorder" data-role="cta" data-id="f6a4bd8d-55ec-4c3a-9ccd-9c5f3df80802" data-verb="purchase" data-sum="9600"><span class="regular-cta-text">Be founding member<span class="cta-hash">#</span><span id="odometer">1</span></span><span class="loading-cta-text"></span></button><a class="play outline button" href="//www.youtube.com/embed/OXA4-5x31V0" data-iframer="//www.youtube.com/embed/OXA4-5x31V0">watch the video</a><script type="text/javascript">var product = { id: 'f6a4bd8d-55ec-4c3a-9ccd-9c5f3df80802', sum: 96, description: 'The Grid Basic', verb: 'purchase', button: '.preorder', benefits: [ '1 year pre-paid subscription', 'Subscription begins v1 release, late Spring 2015', 'Locked-in rate of $8/month (regularly $25)', '7 Sites w/ custom domains', 'Unlimited contributors, Premium storage and bandwidth', 'Commerce engine, due late 2015', 'Grid NFC Token (limited gold edition)' ] };</script></section><section class="post-text duh" style="position:relative;"><article class="content adaptive-container"><h1 class="title">Hello World</h1><p class="text adaptive-text">This is not another do-it-yourself website builder. The Grid harnesses the power of artificial intelligence to take everything you throw at it - videos, images, text, urls and more - and automatically shape them into a custom website unique to you. As your needs grow, it evolves with you, effortlessly adapting to your needs. Want to add e-commerce? Social feeds? A different layout? The Grid just takes care of it. This is not a website builder. This is your personal AI web developer. Its first masterpiece is the website you&#39;re looking at right now. Its next one could be yours.</p></article></section><section class="post-multiple-media media-left else" style="position:relative;"><style type="text/css" scoped="scoped">@media (max-width: 599px) {
+</svg><h2 class="title heading">Join the Evolution</h2><h1 class="subtitle">AI Websites That Design Themselves</h1><button class="cta preorder" data-role="cta" data-id="f6a4bd8d-55ec-4c3a-9ccd-9c5f3df80802" data-verb="purchase" data-sum="9600"><span>Be founding member<span class="cta-hash">#</span><span id="odometer">1</span></span></button><a class="play outline button" href="//www.youtube.com/embed/OXA4-5x31V0" data-iframer="//www.youtube.com/embed/OXA4-5x31V0">watch the video</a><script type="text/javascript">var product = { id: 'f6a4bd8d-55ec-4c3a-9ccd-9c5f3df80802', sum: 96, description: 'The Grid Basic', verb: 'purchase', button: '.preorder', benefits: [ '1 year pre-paid subscription', 'Subscription begins v1 release, late Spring 2015', 'Locked-in rate of $8/month (regularly $25)', '7 Sites w/ custom domains', 'Unlimited contributors, Premium storage and bandwidth', 'Commerce engine, due late 2015', 'Grid NFC Token (limited gold edition)' ] };</script></section><section class="post-text duh" style="position:relative;"><article class="content adaptive-container"><h1 class="title">Hello World</h1><p class="text adaptive-text">This is not another do-it-yourself website builder. The Grid harnesses the power of artificial intelligence to take everything you throw at it - videos, images, text, urls and more - and automatically shape them into a custom website unique to you. As your needs grow, it evolves with you, effortlessly adapting to your needs. Want to add e-commerce? Social feeds? A different layout? The Grid just takes care of it. This is not a website builder. This is your personal AI web developer. Its first masterpiece is the website you&#39;re looking at right now. Its next one could be yours.</p></article></section><section class="post-multiple-media media-left else" style="position:relative;"><style type="text/css" scoped="scoped">@media (max-width: 599px) {
   #post-multiple-media-media-left-2-background {
     background-image: url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/b889e2b2c80def541505f5e9cdbd5ece/gaussianblur?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fassets%2Fimages%2Fpurus-02.jpg&width=599&height=447.84169278996865&std-dev-x=20&std-dev-y=20');
   }
@@ -3269,7 +3241,7 @@ portrait mobile
   #banner-cta-cta-left-14-background {
     background-image: url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/eb5860c92d828384d3afdf2f4fdbcd4d/passthrough?input=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fcdn.thegrid.io%2Fassets%2Fimages%2Fmountain.jpg&width=800&height=600');
   }
-}</style><h1 class="title main">What would you do with 10hrs extra a week?</h1><aside><h1 class="title">$96</h1><h2 class="subtitle">Per Year</h2><button class="button preorder"><span class="regular-cta-text">Pre-order now</span><span class="loading-cta-text"></span></button><svg version="1.1" class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46 46" enable-background="new 0 0 46 46" xml:space="preserve">
+}</style><h1 class="title main">What would you do with 10hrs extra a week?</h1><aside><h1 class="title">$96</h1><h2 class="subtitle">Per Year</h2><button class="button preorder"><span>Pre-order now</span></button><svg version="1.1" class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46 46" enable-background="new 0 0 46 46" xml:space="preserve">
   <polygon points="46,46 0,46 0,0 46,0 46,2 2,2 2,44 44,44 44,13 13,13 13,33 33,33 33,24 22,24 22,22 35,22 35,35 11,35 11,11 46,11"/>
 </svg></aside></section><section class="post-simple media-behind left else" style="background-color:hsl(20,50%,20%); position:relative;"><style type="text/css" scoped="scoped">@media (max-width: 399px) {
   #post-simple-media-behind-left-15-media {
@@ -3911,7 +3883,7 @@ if (exporting ||
 var updater = initOdometer(product);
 function initPreorder (product, updater) {
   var buttons, button, addListener, onClick, injectIframe, frame, onMessage,
-    domain, getReferrer, referrer, storeReferrer;
+    domain, getReferrer, referrer, storeReferrer, activeButton;
 
   try {
     window.localStorage;
@@ -3959,6 +3931,8 @@ function initPreorder (product, updater) {
   };
 
   onClick = function (event) {
+    activeButton = event.currentTarget;
+    activeButton.classList.add('loading');
     window.ga(injectIframe());
   };
 
@@ -3984,6 +3958,8 @@ function initPreorder (product, updater) {
     }
 
     updater.start()
+
+    activeButton.classList.remove('loading');
 
     document.body.removeChild(frame);
     document.body.classList.remove('modal-open');
@@ -4016,7 +3992,8 @@ function initPreorder (product, updater) {
 
       frame = document.createElement('iframe');
       frame.src = url;
-      frame.classList.add('payment-iframe', 'modal');
+      frame.classList.add('payment-iframe');
+      frame.classList.add('modal');
 
       document.body.classList.add('modal-open');
       document.body.classList.add('payment-open');
