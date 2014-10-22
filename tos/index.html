@@ -124,11 +124,51 @@ section .button {
   letter-spacing: .16em;
 }
 
+@-webkit-keyframes loading {
+  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
+  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
+  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
+  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
+  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
+  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
+}
+
+@-moz-keyframes loading {
+  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
+  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
+  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
+  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
+  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
+  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
+}
+
+@-o-keyframes loading {
+  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
+  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
+  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
+  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
+  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
+  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
+}
+
+@keyframes loading {
+  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
+  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
+  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
+  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
+  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
+  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
+}
+
 section button.loading,
 section .button.loading {
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/cta/master/images/processing-monochrome.gif);
+
+  -webkit-animation: loading 1s infinite;
+  -moz-animation: loading 1s infinite;
+  -o-animation: loading 1s infinite;
+  animation: loading 1s infinite;
 }
 
 section button.loading > span,
