@@ -70,6 +70,24 @@ iframe {
   display: inline-block;
 }
 
+.iframer-container .cta {
+  font-family: 'National Medium';
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: hsl(42, 84%, 69%);
+  border: 2px solid hsl(42, 84%, 69%);
+  border-radius: 0;
+  background-color: transparent;
+  padding: 9px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+.iframer-container .cta:hover {
+  color: black;
+  background-color: hsl(42, 84%, 69%);
+}
 
 .iframer-container .closer {
   width: 36px;
@@ -528,6 +546,8 @@ GSS BUG
     @if ::window[width] < 1008 {
       (& h1)[font-size] == 48;
       (& h2)[font-size]  == 20;
+
+      @h |-(& .back) gap([base] * 2);
     }
     @else {
       &[padding-left] == &[padding-right] == [base] * 11;
