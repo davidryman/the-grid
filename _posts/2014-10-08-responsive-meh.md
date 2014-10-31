@@ -3,8 +3,9 @@
   description: "All Your Media, On Any Device\nContent Dictates Form? That&#39;s Evolutionary.\nNever again change your content to fit your template or the latest hot mobile devi"
   author: []
   datePublished: "2014-10-08T16:22:51.923Z"
-  dateModified: "2014-10-08T16:50:57.815Z"
+  dateModified: "2014-10-31T10:54:37.432Z"
   published: true
+  sourcePath: "_posts/2014-10-08-responsive-meh.md"
   _context: "http://schema.org"
   _type: "Article"
 
