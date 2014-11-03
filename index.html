@@ -238,15 +238,12 @@ section.head-cta button .odometer {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 0.8em;
   font-weight: bold;
-  margin-bottom: .1em;
 }
 
 span.cta-hash {
-  margin: .5em;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 0.8em;
   font-weight: bold;
-  margin-bottom: .1em;
 }
 
 section.head-cta .cta, section.head-cta .play:hover {
@@ -1073,6 +1070,17 @@ section.head-cta {
     line-height: == &[font-size] + [base];
   }
 
+  .cta {
+    .number {
+      margin-left: == [base];
+    }
+
+    .odometer {
+      margin-top: == -2;
+      margin-left: == 1;
+    }
+  }
+
   &[sizer] == &[width];
   //&[sizer] <= &[height];
 
@@ -1120,12 +1128,6 @@ section.head-cta {
       font-size: == 14;
       padding: == [base];
     }
-
-    .odometer, .cta-hash {
-      font-size: 0.8em;
-      margin-bottom: 0.4em;
-    }
-
   }
   @else {
 
