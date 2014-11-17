@@ -1,199 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/><meta property="og:image" content="http://s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/purus-fb.png"/><meta property="og:title" content="Frequently Asked Questions"/><meta property="og:site_name" content="The Grid"/><meta property="og:type" content="website"/><meta property="og:description"/><title>The Grid | Frequently Asked Questions</title><style type="text/css">html:not(.gss-ready) {
-  opacity:0;
-}
-
-html {
-  background-color: hsl(210, 0%, 98%);
-}
-
-body {
-  -webkit-text-size-adjust: 100%;
-}
-
-a, p, h1, h2, h3, h4 {
-  font-weight: normal;
-}
-
-* {
-  /*-webkit-backface-visibility: hidden;*/
-  margin: 0px;
-  padding: 0px;
-  outline: none;
-  box-sizing: border-box;
-}
-
-body.modal-open {
-  overflow: hidden;
-  position: fixed;
-}
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-body.modal-open .modal {
-  position: fixed !important;
-  z-index: 10;
-  visibility: visible;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
-
-iframe {
-  border: none;
-  z-index: 2147483600; /* not on top of extension */
-}
-
-.iframer-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: auto;
-  z-index: 2147483600; /* not on top of extension */
-  background-color: rgba(0, 0, 0, 0.95);
-}
-.iframer {
-  position: absolute;
-  top: 72px;
-  left: 72px;
-}
-
-
-.fa.fa-spinner {
-  font-size: 28px;
-  width: 28px;
-  height: 28px;
-  overflow: hidden;
-  display: inline-block;
-}
-
-.iframer-container .cta {
-  font-family: 'National Medium';
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  cursor: pointer;
-  color: hsl(42, 84%, 69%);
-  border: 2px solid hsl(42, 84%, 69%);
-  border-radius: 0;
-  background-color: transparent;
-  padding: 9px;
-  position: absolute;
-  top: 12px;
-  left: 12px;
-}
-.iframer-container .cta:hover {
-  color: black;
-  background-color: hsl(42, 84%, 69%);
-}
-
-.iframer-container .closer {
-  width: 36px;
-  height: 36px;
-  line-height: 32px;
-  border-radius: 24px;
-  border: 2px solid #aaa;
-  color: #aaa;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  opacity: .5;
-}
-.iframer-container .closer:hover {
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-
-/* Typography */
-
-html {
-  font-family: 'National Light';
-}
-
-section .heading {
-  font-family: 'National Thin';
-  letter-spacing: .16em;
-}
-
-section .title.alt {
-  letter-spacing: .16em;
-}
-
-section .subtitle {
-  letter-spacing: .16em;
-}
-
-section p,
-section ol,
-section ul,
-section .text {
-  letter-spacing: .05em;
-}
-
-section button,
-section .button {
-  font-family: 'National Medium';
-  letter-spacing: .16em;
-}
-
-@-webkit-keyframes loading {
-  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
-  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
-  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
-  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
-  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
-  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
-}
-
-@-moz-keyframes loading {
-  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
-  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
-  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
-  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
-  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
-  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
-}
-
-@-o-keyframes loading {
-  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
-  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
-  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
-  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
-  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
-  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
-}
-
-@keyframes loading {
-  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
-  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
-  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
-  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
-  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
-  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
-}
-
-section button.loading,
-section .button.loading {
-  background-position: center;
-  background-repeat: no-repeat;
-
-  -webkit-animation: loading 1s infinite;
-  -moz-animation: loading 1s infinite;
-  -o-animation: loading 1s infinite;
-  animation: loading 1s infinite;
-}
-
-section button.loading > span,
-section .button.loading > span {
-  visibility: hidden;
-}
-.ancillary-header {
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/><meta property="description"/><meta property="og:image" content="http://s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/purus-fb.png"/><meta property="og:title" content="Frequently Asked Questions"/><meta property="og:site_name" content="The Grid"/><meta property="og:type" content="website"/><meta property="og:description"/><meta property="og:app_id" content="1517733501804443"/><title>The Grid</title><style type="text/css">.ancillary-header {
   background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/responsive.jpg');
   background-size: cover;
   background-position: center;
@@ -407,6 +212,201 @@ section .button.loading > span {
     border-top: 2px solid hsla(65, 8%, 69%, .2);
   }
 }
+html:not(.gss-ready) {
+  opacity:0;
+}
+
+html {
+  background-color: hsl(210, 0%, 98%);
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+a, p, h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+* {
+  /*-webkit-backface-visibility: hidden;*/
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body.modal-open .modal {
+  position: fixed !important;
+  z-index: 10;
+  visibility: visible;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+iframe {
+  border: none;
+  z-index: 2147483600; /* not on top of extension */
+}
+
+.iframer-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 2147483600; /* not on top of extension */
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.iframer {
+  position: absolute;
+  top: 72px;
+  left: 72px;
+}
+
+
+.fa.fa-spinner {
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.iframer-container .cta {
+  font-family: 'National Medium';
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: hsl(42, 84%, 69%);
+  border: 2px solid hsl(42, 84%, 69%);
+  border-radius: 0;
+  background-color: transparent;
+  padding: 9px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+.iframer-container .cta:hover {
+  color: black;
+  background-color: hsl(42, 84%, 69%);
+}
+
+.iframer-container .closer {
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+  border-radius: 24px;
+  border: 2px solid #aaa;
+  color: #aaa;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  opacity: .5;
+}
+.iframer-container .closer:hover {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+
+/* Typography */
+
+html {
+  font-family: 'National Light';
+}
+
+section .heading {
+  font-family: 'National Thin';
+  letter-spacing: .16em;
+}
+
+section .title.alt {
+  letter-spacing: .16em;
+}
+
+section .subtitle {
+  letter-spacing: .16em;
+}
+
+section p,
+section ol,
+section ul,
+section .text {
+  letter-spacing: .05em;
+}
+
+section button,
+section .button {
+  font-family: 'National Medium';
+  letter-spacing: .16em;
+}
+
+@-webkit-keyframes loading {
+  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
+  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
+  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
+  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
+  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
+  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
+}
+
+@-moz-keyframes loading {
+  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
+  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
+  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
+  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
+  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
+  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
+}
+
+@-o-keyframes loading {
+  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
+  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
+  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
+  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
+  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
+  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
+}
+
+@keyframes loading {
+  0%    { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading01.png'); }
+  20%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading02.png'); }
+  40%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading03.png'); }
+  60%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading04.png'); }
+  80%   { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading05.png'); }
+  100%  { background-image: url('//s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/loading/loading06.png'); }
+}
+
+section button.loading,
+section .button.loading {
+  background-position: center;
+  background-repeat: no-repeat;
+
+  -webkit-animation: loading 1s infinite;
+  -moz-animation: loading 1s infinite;
+  -o-animation: loading 1s infinite;
+  animation: loading 1s infinite;
+}
+
+section button.loading > span,
+section .button.loading > span {
+  visibility: hidden;
+}
 section.footer {
   background-color: hsl(300, 4%, 16%);
   border-top: 1px solid hsl(300, 4%, 10%);
@@ -425,98 +425,23 @@ section.footer a {
   margin: 1em;
   text-decoration: none;
 }
-</style><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Light.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Medium.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Thin.css"/><link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/><link rel="shortcut icon" href="https://passport.thegrid.io/favicon.ico"/><script type="text/javascript" src="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/gss/dist/gss.min.gz.js"></script></head><body><style type="text/gss" scoped="scoped">section {
-  width: 100%;
-  width: == ::window[width] !require;
-  top: == 0 !require;
-  left: == 0 !require;
-  z-index: 1;
-  overflow-x: hidden;
-  margin: auto;
-  width: 100%;
-
-  height: <= ::window[height] !weak;
-  height: >= &[width] / 2.4 !weak;
+</style><noscript><style type="text/css">html:not(.gss-ready){
+  opacity: 1;
 }
-
-.modal {
-  @h |(&)| in(::window);
-  @v |(&)| in(::window);
+svg {
+  width: 200px;
+  height: 200px;
 }
-
-section.footer {
-  width: == ::window[width];
-  height: == 144;
-
-  (& .content)[center] == &[center];
-
-  .content {
-    size: == &[intrinsic-size];
-    padding: 0 20px;
-  }
+.media,
+.media div {
+  width: 400px;
+  height: 300px;
 }
-
-
-.adaptive-container {
-  @if &[width] > 600 {
-    .adaptive-text {
-      &[font-size] == 22;
-      &[line-height] == 36;
-    }
-  }
-  @else {
-    @if &[width] > 420 {
-      .adaptive-text {
-        &[font-size] == 20;
-        &[line-height] == 30;
-      }
-    }
-    @else {
-      @if &[width] > 260 {
-        .adaptive-text {
-          &[font-size] == 16;
-          &[line-height] == 24;
-        }
-      }
-      @else {
-        .adaptive-text {
-          &[font-size] == 14;
-          &[line-height] == 21;
-        }
-      }
-    }
-  }
+.avatar {
+  width: 50px;
+  height: 50px;
 }
-
-/*
-
-GSS BUG
------------------
-
-.adaptive-text {
-  @if &[width] > 600 {
-    &[font-size] == 22;
-    &[line-height] == 36;
-  }
-  @else {
-    @if &[width] > 420 {
-      &[font-size] == 20;
-      &[line-height] == 30;
-    }
-    @else {
-      @if &[width] > 260 {
-        &[font-size] == 16;
-        &[line-height] == 20;
-      }
-      @else {
-        &[font-size] == 14;
-        &[line-height] == 18;
-      }
-    }
-  }
-}
-*/
-.ancillary-header {
+</style></noscript><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Light.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Medium.css"/><link rel="stylesheet" type="text/css" href="//s3-us-west-2.amazonaws.com/cdn.thegrid.io/fonts/National/National-Thin.css"/><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/><link rel="shortcut icon" href="https://passport.thegrid.io/favicon.ico"/><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-50607580-1', 'auto'); ga('require', 'displayfeatures'); ga('send', 'pageview');</script></head><body><style type="text/gss" scoped="scoped">.ancillary-header {
   height: == &[intrinsic-height];
   width: == ::window[width];
   padding-top: == &[padding-bottom] == [base] * 5;
@@ -868,6 +793,97 @@ GSS BUG
     }
   }
 }
+section {
+  width: 100%;
+  width: == ::window[width] !require;
+  top: == 0 !require;
+  left: == 0 !require;
+  z-index: 1;
+  overflow-x: hidden;
+  margin: auto;
+  width: 100%;
+
+  height: <= ::window[height] !weak;
+  height: >= &[width] / 2.4 !weak;
+}
+
+.modal {
+  @h |(&)| in(::window);
+  @v |(&)| in(::window);
+}
+
+section.footer {
+  width: == ::window[width];
+  height: == 144;
+
+  (& .content)[center] == &[center];
+
+  .content {
+    size: == &[intrinsic-size];
+    padding: 0 20px;
+  }
+}
+
+
+.adaptive-container {
+  @if &[width] > 600 {
+    .adaptive-text {
+      &[font-size] == 22;
+      &[line-height] == 36;
+    }
+  }
+  @else {
+    @if &[width] > 420 {
+      .adaptive-text {
+        &[font-size] == 20;
+        &[line-height] == 30;
+      }
+    }
+    @else {
+      @if &[width] > 260 {
+        .adaptive-text {
+          &[font-size] == 16;
+          &[line-height] == 24;
+        }
+      }
+      @else {
+        .adaptive-text {
+          &[font-size] == 14;
+          &[line-height] == 21;
+        }
+      }
+    }
+  }
+}
+
+/*
+
+GSS BUG
+-----------------
+
+.adaptive-text {
+  @if &[width] > 600 {
+    &[font-size] == 22;
+    &[line-height] == 36;
+  }
+  @else {
+    @if &[width] > 420 {
+      &[font-size] == 20;
+      &[line-height] == 30;
+    }
+    @else {
+      @if &[width] > 260 {
+        &[font-size] == 16;
+        &[line-height] == 20;
+      }
+      @else {
+        &[font-size] == 14;
+        &[line-height] == 18;
+      }
+    }
+  }
+}
+*/
 </style><section class="ancillary-header" style="position:relative;"><h2 class="subtitle">AI Websites That Design Themselves</h2><h1 class="heading">Join the Evolution</h1><a class="back" href="../"><i class="fa fa-arrow-left"></i></a></section><section class="ancillary" style="position:relative;"><h1>Frequently Asked Questions</h1>
 <p>Search with CMD / CTRL + F</p>
 <h3>What is The Grid?</h3>
@@ -983,16 +999,461 @@ GSS BUG
 <h3>Are you hiring?</h3>
 <p>We&#39;re always on the hunt for talented and passionate individuals. Please forward inquiries to <a href="mailto:careers@thegrid.io">careers@thegrid.io</a>, or find us on one of our Github Repos.</p>
 <h3>What type of coffee should I bring to my interview?</h3>
-<p>Large with a dash of soy milk and sprinkle of cinnamon. Or simply black. </p></section><section class="footer" style="position: relative"><div class="content"><a href="/team/">Team</a><a href="/faq/">FAQ</a><a href="/pp/">Privacy Policy</a><a href="/tos/">TOS</a><a href="mailto:support@thegrid.io">support</a><a href="mailto:invest@thegrid.io">investors</a></div></section><script>window.engine = GSS(document, {
-  "md": 72,
-  "-md": -72,
-  "-md-2": -36,
-  "md-2": 36,
-  "md2": 144,
-  "md-gap": 36,
-  "md-gap2": 18,
-  "base": 8
-});</script><script src="//platform.twitter.com/oct.js" type="text/javascript"></script><script type="text/javascript">var analytics = {"google":"UA-50607580-1","facebook":"295556487279234","twitter":"l4y05"};</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<p>Large with a dash of soy milk and sprinkle of cinnamon. Or simply black. </p></section><section class="footer" style="position: relative"><div class="content"><a href="/team/">Team</a><a href="/faq/">FAQ</a><a href="/pp/">Privacy Policy</a><a href="/tos/">TOS</a><a href="mailto:support@thegrid.io">support</a><a href="mailto:invest@thegrid.io">investors</a></div></section><script>var Identity, Negotiator, Solution;
+
+Identity = (function() {
+  function Identity() {}
+
+  Identity.uid = 0;
+
+  Identity.prototype.provide = function(object, generate) {
+    var id;
+    if (typeof object === 'string') {
+      if (object.charAt(0) !== '$') {
+        return '$' + object;
+      } else {
+        return object;
+      }
+    }
+    if (!(id = object._gss_id)) {
+      if (object === document) {
+        id = "::document";
+      } else if (object === window) {
+        id = "::window";
+      }
+      if (generate !== false) {
+        object._gss_id = id || (id = "$" + (object._gss_uid || object.id || ++Identity.uid));
+        this[id] = object;
+      }
+    }
+    return id;
+  };
+
+  return Identity;
+
+})();
+
+Solution = (function() {
+  function Solution(values, scope) {
+    if (scope == null) {
+      scope = document;
+    }
+    if (!this.preimport) {
+      return new Solution(values, scope);
+    }
+    this.scope = scope;
+    this.identity = new Identity;
+    this.preimport();
+    this.apply(values, this.scope);
+  }
+
+  Solution.prototype.preimport = function() {
+    var element, _i, _len, _ref, _results;
+    this.identity.provide(document.body);
+    this.all = document.body.getElementsByTagName('*');
+    _ref = this.all;
+    _results = [];
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      element = _ref[_i];
+      _results.push(this.identity.provide(element));
+    }
+    return _results;
+  };
+
+  Solution.prototype.each = function(parent, callback, x, y, offsetParent, a, r, g, s) {
+    var child, index, measure, offsets, scope;
+    if (x == null) {
+      x = 0;
+    }
+    if (y == null) {
+      y = 0;
+    }
+    scope = this.scope;
+    parent || (parent = scope);
+    if (offsets = callback.call(this, parent, x, y, a, r, g, s)) {
+      x += offsets.x || 0;
+      y += offsets.y || 0;
+    }
+    if (parent.offsetParent === scope) {
+      x -= scope.offsetLeft;
+      y -= scope.offsetTop;
+    } else if (parent !== scope) {
+      if (!offsets) {
+        measure = true;
+      }
+    }
+    if (parent === document) {
+      parent = document.body;
+    }
+    child = parent.firstChild;
+    index = 0;
+    while (child) {
+      if (child.nodeType === 1) {
+        if (measure && index === 0 && child.offsetParent === parent) {
+          x += parent.offsetLeft + parent.clientLeft;
+          y += parent.offsetTop + parent.clientTop;
+          offsetParent = parent;
+        }
+        if (child.style.position === 'relative') {
+          this.each(child, callback, 0, 0, offsetParent, a, r, g, s);
+        } else {
+          this.each(child, callback, x, y, offsetParent, a, r, g, s);
+        }
+        index++;
+      }
+      child = child.nextSibling;
+    }
+    return a;
+  };
+
+  Solution.prototype.getPath = function(id, property) {
+    return id + '[' + property + ']';
+  };
+
+  Solution.prototype.provide = function(id, property, value, positioning) {
+    var element, last, path;
+    if (id == null) {
+      path = property;
+      last = path.lastIndexOf('[');
+      if (last === -1) {
+        return;
+      }
+      property = path.substring(last + 1, path.length - 1);
+      id = path.substring(0, last);
+    } else {
+      path = this.getPath(id, property);
+    }
+    if (id.charAt(0) === ':') {
+      return;
+    }
+    if (!(element = this.identity[id])) {
+      if (id.indexOf('"') > -1) {
+        return;
+      }
+      if (!(element = this.scope.getElementById(id.substring(1)))) {
+        return;
+      }
+    }
+    if (positioning && (property === 'x' || property === 'y')) {
+      return (positioning[id] || (positioning[id] = {}))[property] = value;
+    } else {
+      return this.restyle(element, property, value);
+    }
+  };
+
+  Solution.prototype.camelize = function(string) {
+    return string.toLowerCase().replace(/-([a-z])/gi, function(match) {
+      return match[1].toUpperCase();
+    });
+  };
+
+  Solution.prototype.restyle = function(element, property, value, continuation, operation) {
+    var camel, position;
+    if (value == null) {
+      value = '';
+    }
+    switch (property) {
+      case "x":
+        property = "left";
+        break;
+      case "y":
+        property = "top";
+    }
+    camel = this.camelize(property);
+    if (typeof value !== 'string') {
+      if (property !== 'z-index' && property !== 'opacity') {
+        value = value + 'px';
+      }
+    }
+    if (property === 'left' || property === 'top') {
+      position = element.style.position;
+      if (element.positioned === void 0) {
+        element.positioned = +(!!position);
+      }
+      if (position && position !== 'absolute') {
+        return;
+      }
+      if (element.style[camel] === '') {
+        if ((value != null) && value !== '') {
+          element.positioned = (element.positioned || 0) + 1;
+        }
+      } else {
+        if ((value == null) || value === '') {
+          element.positioned = (element.positioned || 0) - 1;
+        }
+      }
+      if (element.positioned === 1) {
+        element.style.position = 'absolute';
+      } else if (element.positioned === 0) {
+        element.style.position = '';
+      }
+    }
+    return element.style[camel] = value;
+  };
+
+  Solution.prototype.apply = function(object, node) {
+    var data, id, path, positioning, prop, property, styles, value, _ref;
+    data = {};
+    for (property in object) {
+      value = object[property];
+      data[property] = value;
+    }
+    if (data.stylesheets) {
+      if (!this.sheet) {
+        this.sheet = document.createElement('style');
+        document.body.appendChild(this.sheet);
+      }
+      this.sheet.textContent = this.sheet.innerText = data.stylesheets;
+      delete data.stylesheets;
+    }
+    if (this.values) {
+      _ref = this.values;
+      for (property in _ref) {
+        value = _ref[property];
+        if (data[property] == null) {
+          data[property] = null;
+        }
+      }
+    }
+    positioning = {};
+    if (data) {
+      for (path in data) {
+        value = data[path];
+        if (value !== void 0) {
+          this.provide(null, path, value, positioning);
+        }
+      }
+    }
+    this.each(node, this.placehold, null, null, null, positioning, !!data);
+    for (id in positioning) {
+      styles = positioning[id];
+      for (prop in styles) {
+        value = styles[prop];
+        this.provide(id, prop, value);
+      }
+    }
+    for (property in data) {
+      value = data[property];
+      if (value == null) {
+        delete data[property];
+      }
+    }
+    if (!this.values) {
+      document.body.parentNode.className += ' gss-ready';
+    }
+    return this.values = data;
+  };
+
+  Solution.prototype.placehold = function(element, x, y, positioning, full) {
+    var left, offsets, property, styles, top, uid, value, values;
+    offsets = void 0;
+    if (uid = element._gss_id) {
+      styles = positioning != null ? positioning[uid] : void 0;
+      if (values = this.values) {
+        if ((styles != null ? styles.x : void 0) === void 0) {
+          if ((left = values[uid + '[x]']) != null) {
+            (styles || (styles = (positioning[uid] || (positioning[uid] = {})))).x = left;
+          }
+        }
+        if ((styles != null ? styles.y : void 0) === void 0) {
+          if ((top = values[uid + '[y]']) != null) {
+            (styles || (styles = (positioning[uid] || (positioning[uid] = {})))).y = top;
+          }
+        }
+      }
+      if (styles) {
+        for (property in styles) {
+          value = styles[property];
+          if (value !== null) {
+            switch (property) {
+              case "x":
+                styles.x = value - x;
+                (offsets || (offsets = {})).x = value - x;
+                break;
+              case "y":
+                styles.y = value - y;
+                (offsets || (offsets = {})).y = value - y;
+            }
+          }
+        }
+      }
+    }
+    return offsets;
+  };
+
+  return Solution;
+
+})();
+
+Negotiator = (function() {
+  function Negotiator(sizes, storage, baseline, callback, offset, prefix) {
+    var group, height, size, width, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref, _ref1, _ref2, _ref3;
+    if (baseline == null) {
+      baseline = 72;
+    }
+    if (!this.match) {
+      return Negotiator.instance || (Negotiator.instance = new Negotiator(sizes, storage, baseline, callback, offset, prefix));
+    }
+    this.sizes = [];
+    this.callback = callback;
+    if (prefix) {
+      this.prefix = prefix + ' ';
+    } else {
+      this.prefix = '';
+    }
+    this.storage = storage || localStorage;
+    this.offset = offset || 0;
+    for (_i = 0, _len = sizes.length; _i < _len; _i++) {
+      group = sizes[_i];
+      _ref = group[0];
+      for (_j = 0, _len1 = _ref.length; _j < _len1; _j++) {
+        width = _ref[_j];
+        _ref1 = group[1];
+        for (_k = 0, _len2 = _ref1.length; _k < _len2; _k++) {
+          height = _ref1[_k];
+          this.sizes.push(width + 'x' + height);
+        }
+      }
+    }
+    this.widths = [];
+    this.heights = [];
+    _ref2 = this.sizes;
+    for (_l = 0, _len3 = _ref2.length; _l < _len3; _l++) {
+      size = _ref2[_l];
+      if (!this.storage[this.prefix + size]) {
+        continue;
+      }
+      _ref3 = size.split('x'), width = _ref3[0], height = _ref3[1];
+      this.widths.push(parseInt(width) * baseline);
+      this.heights.push(parseInt(height) * baseline);
+    }
+    window.addEventListener('resize', (function(_this) {
+      return function() {
+        return _this.match();
+      };
+    })(this));
+    window.addEventListener('orientationchange', (function(_this) {
+      return function() {
+        return setTimeout(function() {
+          return _this.match();
+        }, 50);
+      };
+    })(this));
+    this.match();
+  }
+
+  Negotiator.prototype.match = function(width, height) {
+    var h, i, values, w, x, y, _i, _j, _len, _len1, _ref, _ref1;
+    if (width == null) {
+      width = window.innerWidth + this.offset;
+    }
+    if (height == null) {
+      height = window.innerHeight;
+    }
+    x = y = 0;
+    _ref = this.widths;
+    for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
+      w = _ref[i];
+      if (this.storage[this.prefix + this.sizes[i]]) {
+        if ((width - w) > 0 && (width - w) < (width - x)) {
+          x = w;
+        }
+      }
+    }
+    _ref1 = this.heights;
+    for (i = _j = 0, _len1 = _ref1.length; _j < _len1; i = ++_j) {
+      h = _ref1[i];
+      if (this.storage[this.prefix + this.sizes[i]]) {
+        if (this.widths[i] === x) {
+          if (!y || (Math.abs(height - h) < Math.abs(height - y))) {
+            y = h;
+          }
+        }
+      }
+    }
+    if (!y || !h) {
+      return;
+    }
+    values = this.storage[this.prefix + x / 72 + 'x' + y / 72];
+    if (typeof values === 'string') {
+      values = JSON.parse(values);
+    }
+    if (this.solution) {
+      this.solution.apply(values);
+    } else {
+      this.solution = Solution(values);
+    }
+    return this.callback(x, y, values);
+  };
+
+  return Negotiator;
+
+})();</script><script>// PASTE JSON RESPONSE INSTEAD OF null here
+window.Storage = null;
+
+window.Sizes = [
+  [
+    [15, 16, 17, 18, 19, 20, 21, 22, 27],
+    [10, 13, 16, 17]
+  ],
+  [
+    [10, 11, 12, 13, 14],
+    [7, 10, 13]
+  ],
+  [
+    [5, 6, 7, 8, 9],
+    [5, 6, 7, 8]
+  ]
+]
+
+var exporting = (location.search.indexOf('export=') > -1)
+var body = document.body
+var uid = 10000
+body._gss_uid = body._gss_uid  || body.id || ++uid
+var els = body.getElementsByTagName('*');
+var type;
+for (var i = 0, el; el = els[i++];) {
+  if (el.tagName != 'SCRIPT' &&
+       (el.tagName != 'STYLE'
+         || ((type = el.getAttribute('type')) && type.indexOf('gss') > -1)))
+
+    el._gss_uid = el._gss_uid  || el.id || ++uid
+}
+
+if (exporting ||
+    ((location.search.indexOf('compiled') == -1
+      && !window.Storage))) {
+  var script = document.createElement('script')
+  script.id = 'loader'
+  script.onload = function() {
+    window.engine = GSS(document, {
+      "md": 72,
+      "-md": -72,
+      "-md-2": -36,
+      "md-2": 36,
+      "md2": 144,
+      "md-gap": 36,
+      "md-gap2": 18,
+      "base": 8
+    });
+  }
+  script.src = "//s3-us-west-2.amazonaws.com/cdn.thegrid.io/gss/dist/gss.min.gz.js"
+  document.body.appendChild(script)
+} else {
+  var sections = document.getElementsByTagName('section');
+  // request breakpoint solution for width + 71px, crop difference
+  Negotiator(window.Sizes, window.Storage || localStorage, 72, function(width, height) {
+    for (var i = 0, section; section = sections[i++]; ) {
+
+      diff = window.innerWidth - width
+      section.style.marginLeft = diff / 2 + 'px'
+      section.style.width = (width) + 'px'
+      bgs = section.getElementsByClassName('bg')
+      section.style.backgroundOrigin = 'border-box'
+
+    }
+  }, 71)
+}</script><script src="//platform.twitter.com/oct.js" type="text/javascript"></script><script type="text/javascript">var analytics = {"google":"UA-50607580-1","facebook":"295556487279234","twitter":"l4y05"};</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 (function (window) {
   window.ga('create', window.analytics.google, 'auto');
