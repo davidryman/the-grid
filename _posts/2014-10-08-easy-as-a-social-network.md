@@ -13,5 +13,5 @@
 
 ## As Beautiful & Unique As You
 
-Never again change your content to fit a cookie-cutter social network or today's hot website template. Just throw in videos, images, text, products and more and magically get a website that looks like it was poured over by a million-dollar design team. Once and for all, content is king.
+Never again change your content to fit a cookie-cutter social network or today's hot website template. Just throw in videos, images, text, products and more and magically get a website that looks like it was pored over by a million-dollar design team. Once and for all, content is king.
 ![](https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/posts/EasyAs-image.png)
