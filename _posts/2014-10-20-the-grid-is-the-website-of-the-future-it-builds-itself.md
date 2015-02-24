@@ -6,24 +6,32 @@
       avatar: {}
   related: 
     - 
-      score: 0.7749108672142029
-      description: "This is not another do-it-yourself website builder. The Grid harnesses the power of artificial intelligence to take everything you throw at it - videos, images, text, urls and more - and automatically shape them into a custom website unique to you. As your needs grow, it evolves with you, effortlessly adapting to your needs."
-      title: "AI Websites That Design Themselves"
-      url: "https://thegrid.io/"
-      thumbnail_height: 315
-      thumbnail_url: "http://s3-us-west-2.amazonaws.com/cdn.thegrid.io/assets/images/purus-fb.png"
-      thumbnail_width: 600
+      score: 0.6997995376586914
+      description: "It seems like companies decide they're ready to redesign their website every 2 years or so. But it's a lot of work! You have to gather a team, find an agency, identify stakeholders, write personas ... You get the point. Nevertheless, every 2 years or so, we labor and labor to redesign and launch a website."
+      title: "9 bad reasons for a website redesign"
+      url: "http://blog.invisionapp.com/9-bad-reasons-for-a-website-redesign/"
+      thumbnail_height: 1038
+      thumbnail_url: "http://blog.invisionapp.com/wp-content/uploads/2015/01/trendy.png"
+      thumbnail_width: 1598
     - 
-      score: 0.6071497201919556
-      description: "These days, your business needs an online presence. It is an important component in the process of marketing your business to an online audience. The primary objective when building a website is to market your products and services. And for that, it is essential to ensure a maximum number of people visit your website."
-      title: "Web Design Tips for Beginners to Drive Traffic to Your Site"
-      url: "http://smallbiztrends.com/2014/11/web-design-tips-for-beginners.html"
-      thumbnail_height: 369
-      thumbnail_url: "http://smallbiztrends.com/wp-content/uploads/2014/11/110314-web-design-660x369.jpg"
-      thumbnail_width: 660
+      score: 0.6032466292381287
+      description: "Every year, Web design grows and so many awesome things are being published daily. I can only imagine that the best is yet to come in 2015, including many of the trends we predicted for 2014. While many of those trends will still be around in 2015 (and probably 2016), it's time to see what new trends are likely to emerge in 2015."
+      title: "10 Web Design Trends You Can Expect to See in 2015"
+      url: "http://thenextweb.com/dd/2015/01/02/10-web-design-trends-can-expect-see-2015/"
+      thumbnail_height: 560
+      thumbnail_url: "http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2014/12/webdesign.jpg"
+      thumbnail_width: 1460
+    - 
+      score: 0.5543395280838013
+      description: "Design is an essential part of all the content you produce, from your blog posts to your Tweets. It's also one of the most challenging, especially for those among us who aren't designers, and can't afford to hire one. We try our best to create things that are visually appealing but also effective in their purpose."
+      title: "5 Snarky (but Simple) Design Tips That Will Immediately Improve Your Content"
+      url: "http://blog.hootsuite.com/5-snarky-but-simple-design-tips-to-improve-your-content/"
+      thumbnail_height: 250
+      thumbnail_url: "http://blog.hootsuite.com/wp-content/uploads/2014/12/design-tips-header.jpg"
+      thumbnail_width: 600
   publisher: 
     url: "http://www.fastcolabs.com"
-    name: "Fastcolabs"
+    name: "Co.Labs"
     favicon: "http://www.fastcolabs.com/favicon.ico"
     domain: "www.fastcolabs.com"
   keywords: 
@@ -43,7 +51,7 @@
   app_links: []
   isBasedOnUrl: "http://www.fastcolabs.com/3037187/the-grid-is-building-the-website-of-the-future-it-designs-itself"
   title: "The Grid Is The Website Of The Future: It Builds Itself"
-  dateModified: "2014-11-21T18:25:02.677Z"
+  dateModified: "2015-02-24T16:43:22.608Z"
   sourcePath: "_posts/2014-10-20-the-grid-is-the-website-of-the-future-it-builds-itself.md"
   published: true
   _context: "http://schema.org"
