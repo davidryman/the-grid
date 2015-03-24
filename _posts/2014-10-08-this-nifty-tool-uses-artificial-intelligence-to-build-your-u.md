@@ -35,7 +35,7 @@
   app_links: []
   isBasedOnUrl: "http://www.entrepreneur.com/article/238255"
   title: "This Nifty Tool Uses Artificial Intelligence to Build Your Ultimate Website"
-  dateModified: "2015-03-20T20:13:44.507Z"
+  dateModified: "2015-03-24T21:08:55.622Z"
   sourcePath: "_posts/2014-10-08-this-nifty-tool-uses-artificial-intelligence-to-build-your-u.md"
   published: true
   _context: "http://schema.org"
