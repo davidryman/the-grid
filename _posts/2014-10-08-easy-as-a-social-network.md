@@ -1,12 +1,13 @@
 ---
-  title: "Easy as a Social Network"
-  description: "As Easy As A Social Network\nAs Beautiful &amp; Unique As You\nNever again change your content to fit a cookie-cutter social network or today&#39;s hot website te"
-  author: []
-  datePublished: "2014-10-08T16:26:29.721Z"
-  dateModified: "2014-10-08T16:52:19.428Z"
-  published: true
-  _context: "http://schema.org"
-  _type: "Article"
+title: Easy as a Social Network
+description: "As Easy As A Social Network\nAs Beautiful &amp; Unique As You\nNever again change your content to fit a cookie-cutter social network or today&#39;s hot website te"
+author: []
+datePublished: "2014-10-08T16:26:29.721Z"
+dateModified: "2015-05-15T23:53:40.509Z"
+published: true
+sourcePath: _posts/2014-10-08-easy-as-a-social-network.md
+_context: "http://schema.org"
+_type: Article
 
 ---
 # As Easy As A Social Network
