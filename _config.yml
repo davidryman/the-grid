@@ -20,13 +20,16 @@ collections:
     index:
       path: /
       number: 50
+      navigable: true
   - filter:
       tag:
         tag: ancillary
     permalink:
       path: "/:title/"
+      navigable: true
   - filter:
       tag:
         tag: team
     permalink:
       path: /team/
+      navigable: true
