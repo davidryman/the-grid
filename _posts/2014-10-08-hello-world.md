@@ -1,12 +1,28 @@
 ---
-  title: "Hello World"
-  description: "Hello World\nThis is not another do-it-yourself website builder. The Grid harnesses the power of artificial intelligence to take everything you throw at it - vid"
-  author: []
-  datePublished: "2014-10-08T16:26:48.634Z"
-  dateModified: "2014-10-08T16:53:24.830Z"
-  published: true
-  _context: "http://schema.org"
-  _type: "Article"
+inFeed: true
+hasPage: false
+inNav: false
+isBasedOnUrl: null
+inLanguage: null
+starred: true
+keywords: []
+description: This is not another do-it-yourself website builder. The Grid harnesses the power of artificial intelligence to take everything you throw at it - vid
+datePublished: '2015-11-20T03:19:13.033Z'
+dateModified: '2015-11-20T03:19:07.249Z'
+title: Hello World
+author: []
+published: true
+sourcePath: _posts/2014-10-08-hello-world.md
+tags:
+  - ''
+authors: []
+publisher:
+  name: null
+  domain: null
+  url: null
+  favicon: null
+_type: Blurb
+_context: 'http://schema.org'
 
 ---
 # Hello World
